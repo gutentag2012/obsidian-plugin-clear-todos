@@ -1,11 +1,10 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "clear-todos",
+	"name": "Clear Todos",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "Allows you to clear all todos that are done in a note.",
+	"author": "Joshua Gawenda",
+	"authorUrl": "https://github.com/gutentag2012",
 	"isDesktopOnly": false
 }
