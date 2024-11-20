@@ -1,9 +1,9 @@
 {
 	"id": "clear-todos",
 	"name": "Clear Todos",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
-	"description": "Allows you to clear all todos that are done in a note.",
+	"description": "Quickly remove all completed todos from your notes or selected text.",
 	"author": "Joshua Gawenda",
 	"authorUrl": "https://github.com/gutentag2012",
 	"isDesktopOnly": false
