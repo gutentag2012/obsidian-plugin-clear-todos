@@ -1,6 +1,6 @@
 import { Editor, MarkdownView, Plugin } from 'obsidian';
 
-const DONE_TODO_REGEX = /(^|\n)- \[x\].*?(?=\n|$)/g;
+const DONE_TODO_REGEX = /(^|\n)\t*- \[x\].*?(?=\n|$)/g;
 
 export default class ClearTodosPlugin extends Plugin {
 	async onload() {
