@@ -1,4 +1,4 @@
-import {Editor, EventRef, MarkdownView, Menu, Plugin, TAbstractFile, TFile} from 'obsidian';
+import {Editor, EventRef, MarkdownView, Plugin, TAbstractFile, TFile} from 'obsidian';
 
 const DONE_TODO_REGEX = /(^|\n)\t*- \[x\].*?(?=\n|$)/g;
 
@@ -9,7 +9,7 @@ export default class ClearTodosPlugin extends Plugin {
 	async onload() {
 		this.addCommand({
 			id: 'clear-todos',
-			name: 'Clear in selection or current files',
+			name: 'Clear todos in selection or current file',
 			editorCallback: (_editor: Editor, view: MarkdownView) => {
 				this.clearTodosOnView(view)
 			},
@@ -24,7 +24,7 @@ export default class ClearTodosPlugin extends Plugin {
 			}
 			menu.addItem((item) =>
 				item
-					.setTitle("Clear in selection or current file")
+					.setTitle("Clear todos in selection or current file")
 					.setIcon("check-check")
 					.onClick(async () => {
 						this.clearTodosOnView(view)
@@ -34,7 +34,7 @@ export default class ClearTodosPlugin extends Plugin {
 		this.fileMenuEvent = this.app.workspace.on("file-menu", (menu, file) => {
 			menu.addItem((item) =>
 				item
-					.setTitle("Clear Todos in file")
+					.setTitle("Clear todos in file")
 					.setIcon("check-check")
 					.onClick(async () => {
 						await this.clearTodosForFile(file)
