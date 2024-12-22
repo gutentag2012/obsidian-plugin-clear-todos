@@ -17,7 +17,7 @@ export default class ClearTodosPlugin extends Plugin {
 			id: CLEAR_COMMAND_ID,
 			name: TODO_TEXTS.clearSelection,
 			editorCallback: (_editor: Editor, view: MarkdownView) => {
-				this.clearTodosOnView(view)
+				this.clearTodosInView(view)
 			},
 			icon: CLEAR_TODO_ICON
 		});
@@ -32,7 +32,7 @@ export default class ClearTodosPlugin extends Plugin {
 				item
 					.setTitle(TODO_TEXTS.clearSelection)
 					.setIcon(CLEAR_TODO_ICON)
-					.onClick(() => this.clearTodosOnView(view))
+					.onClick(() => this.clearTodosInView(view))
 			)
 		})
 		this.fileMenuEvent = this.app.workspace.on("file-menu", (menu, file) => {
@@ -58,7 +58,7 @@ export default class ClearTodosPlugin extends Plugin {
 		await file.vault.modify(file, this.clearTodoString(fileContent))
 	}
 
-	private clearTodosOnView(view: MarkdownView) {
+	private clearTodosInView(view: MarkdownView) {
 		const selection = view.editor?.getSelection();
 		if (selection) {
 			return view.editor.replaceSelection(this.clearTodoString(selection))
