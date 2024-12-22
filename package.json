@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-plugin-clear-todos",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "This is an obsidian plugin to quickly remove all completed todos from your notes or selected text.",
 	"main": "main.js",
 	"scripts": {
