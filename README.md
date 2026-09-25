@@ -1,5 +1,13 @@
-# Clear Todos
+# Todo Organizer
 
-> Quickly remove all completed todos from your notes or selected text.
+> Quickly remove or move all completed todos from your notes or selected text.
 
-Adds a command to clear all completed todos in the current selection or the entire document if there is no selection.
+Adds 2 commands to perform on the current selection or the entire document if there is no selection:
+
+- Clear all completed todos
+
+- Move all completed todos to the bottom
+
+Supports the following types of todos:
+- completed `- [x]`
+- scrapped `- [-]`

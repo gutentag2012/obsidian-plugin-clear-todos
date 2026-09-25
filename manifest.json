@@ -1,10 +1,10 @@
 {
-	"id": "clear-todos",
-	"name": "Clear Todos",
-	"version": "1.0.3",
+	"id": "todo-organizer",
+	"name": "Todo Organizer",
+	"version": "0.0.1",
 	"minAppVersion": "0.15.0",
-	"description": "Quickly remove all completed todos from your notes or selected text.",
-	"author": "Joshua Gawenda",
-	"authorUrl": "https://github.com/gutentag2012",
+	"description": "Fork of clear-todos by Joshua Gawenda, instead of clearing it can also move todos to the bottom.",
+	"author": "Merlin",
+	"authorUrl": "https://github.com/allesman",
 	"isDesktopOnly": false
 }

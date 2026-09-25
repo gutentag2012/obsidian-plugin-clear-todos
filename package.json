@@ -1,15 +1,16 @@
 {
-	"name": "obsidian-plugin-clear-todos",
-	"version": "1.0.3",
-	"description": "This is an obsidian plugin to quickly remove all completed todos from your notes or selected text.",
+	"name": "todo-organizer",
+	"version": "0.0.1",
+	"description": "Fork of clear-todos by Joshua Gawenda, instead of clearing it can also move todos to the bottom.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
-		"version": "node version-bump.mjs && git add manifest.json versions.json"
+		"version": "node version-bump.mjs && git add manifest.json versions.json",
+		"test": "vitest"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "merlin",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^16.11.6",
@@ -20,5 +21,9 @@
 		"obsidian": "latest",
 		"tslib": "2.4.0",
 		"typescript": "4.7.4"
+	},
+	"dependencies": {
+		"vite": "^8.3.0",
+		"vitest": "^5.0.0"
 	}
 }
